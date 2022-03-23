@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-
+//Pruebita de papiloko para git
 void ordena_per_bombolla(vector<double>& v){
 	int tam = int(v.size());
 	for(int j=0;j<tam;++j)	{
