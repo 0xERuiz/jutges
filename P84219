@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int first_occurrence(double x, const vector<double>& v);
+	bool trobat=false;
+	while(trobat=false)	{
+		int posi=0, posf=v.size();
+		int aux = (posi+posf)/2;
+		if(v[aux]<x) posi = aux;
+			else posf = aux;
+		if(posf-1==posi)	{
+			return posf;
+			trobat=true;
+
+		}
+	}
+
+
+int main() {
+    int n;
+    while (cin >> n) {
+        vector<double> V(n);
+        for (int i = 0; i < n; ++i) cin >> V[i];
+        int t;
+        cin >> t;
+        while (t--) {
+            double x;
+            cin >> x;
+            cout << first_occurrence(x, V) << endl;
+        }
+    }
+}
